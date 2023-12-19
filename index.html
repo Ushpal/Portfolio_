@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ushpal_Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: rgb(0,0,33 );
+            color:white;
+            font-family: 'poppins', sans-serif;
+   }
+   nav{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 75px;
+         background-color: rgb(18, 18, 62);
+   }
+   nav ul{
+       display: flex;
+       justify-content: center;
+   }
+   nav ul li{
+         list-style: none;
+         margin-left: 23px;
+    }
+
+    nav ul li a{
+         text-decoration: none;
+         color: white;
+    }
+
+    nav ul li a:hover {
+         color: rgb(112, 194, 69);
+         font-size: 1.06rem;
+    }
+
+    main hr{
+        border: 0;
+        margin: 40px 84px;
+        height: 1.2px;
+        background: rgb(142, 136, 218);
+    }
+
+    .left{
+        font-size: 2rem;    
+    }
+    .firstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .firstSection > div{
+        width: 30%;
+    }
+
+
+    .leftSection{
+        /* background-color: rgb(18, 18, 62); */
+        font-size :2.8rem;
+        margin: 50px 0;
+    }
+
+    .leftSection .buttons{
+        padding: 50px 0;
+
+    }
+
+    .leftSection .btn{
+        padding: 17px;
+        background: #1e2167;
+        color: white;
+        border:2px solid white;
+        border-radius: 6px;
+        font-size:20px;
+        cursor: pointer;
+       }
+
+
+
+    .rightSection img{
+        background: rgb(119, 45, 11);
+        border-radius: 70%;
+        width: 110%;
+        margin: 30px 50px ;
+        
+    }
+    .Red{
+        color: rgb(130, 236, 8);
+        font-size: 2rem; 
+        margin-left: left;
+    }
+       
+
+    .purple{
+        color: rgb(112, 194, 69);
+    }
+
+    #element{
+        color: rgb(236, 63, 63)
+    }
+
+    .secondSection{
+        max-width:80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondSection h1{
+        font-size: 2rem;
+        margin: 50px 0;
+    }
+
+        .secondSection .box{
+        background: rgb(142, 136, 218) ;
+        width: 80vw;
+        height: 2px;
+        margin: 56px;
+        display: flex;
+    }
+
+    .secondSection .vertical{
+        background: rgb(142, 136, 218) ;
+        width: 1px;
+        height: 93px;
+        margin: 20px 100px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e2167;
+      padding: 20px;
+      color: rgb(235, 228, 228);
+      ;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="'left"> <span class="Red"><B>Ushpal_Portfolio</B></span> 
+            </div>
+            <div class="right">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About_Me</a></li>
+                <li><a href="#footer-contact">Contact</a></li>
+                <li><a href="">Projects</a></li>
+            </nav>   
+    </header>
+    
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi! I am <span class="purple">Ushpal</span> 
+            <div>and I am a </div>
+            <span id="element"></span> 
+            <br>
+            <div class="buttons">
+            <button class="btn" onclick="window.location.href='resume.pdf'" download>Resume</button>
+            <button class="btn" onclick="window.location.href='https://github.com/Ushpal'">GitHub</button>    
+            </div>
+            </div>
+            <div class="rightSection">
+            <img src="hak.png" alt="">
+            </div>
+        </section>
+<hr>
+        <!-- <section class="secondSection">
+            <h1>My_Experience</h1>
+            <div class="box"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+        </section> -->
+    
+        <footer>
+            <p>Contact me: <a href="mailto:ushpal.phuyel73@gmail.com">info@u$p@l.com</a></p>
+            <p>&copy; 2023 u$p@l. All rights reserved.</p>
+          </footer>
+          
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+      strings: ['Programmer','Web Developer','Security Enthusiasts','Bug Hunter','Crypto Enthusiasts'],
+      typeSpeed: 50,
+    });
+    </script>
+</body>
+</html>
